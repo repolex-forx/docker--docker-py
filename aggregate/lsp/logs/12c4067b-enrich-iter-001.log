@@ -1,0 +1,58 @@
+[2026-04-09T17:52:06Z] === ENRICH ITERATION 1 START | repo=docker/docker-py sha=12c4067b ===
+[2026-04-09T17:52:06Z] [iter=1] PHASE START: enrich repo=docker/docker-py sha=12c4067b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/12c4067b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/12c4067b866c9c96ecc130d55740ef04c276fd34.nq.gz
+[2026-04-09T17:52:16Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-09T17:52:23Z] [iter=1] AST store loaded triples=1107731 load_secs=7 mem_mb=884 MB
+[2026-04-09T17:52:23Z] [iter=1] Step 2: Finding LSP targets mem_mb=884 MB
+[2026-04-09T17:52:26Z] [iter=1] LSP targets found call_sites=7223 imports=406 extends=185 implements=0 secs=3
+[2026-04-09T17:52:29Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=884 MB
+[2026-04-09T17:52:36Z] [iter=1] Position index built positions=77408 nodes_with_types=100591 secs=6 mem_mb=884 MB
+[2026-04-09T17:52:36Z] [iter=1] Step 3: Starting LSP resolution mem_mb=884 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T17:52:36Z] [iter=1] Resolving target type target_type=call_site count=7223
+[2026-04-09T17:52:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=0 resolved=0 errors=0 current=docker/credentials/utils.py
+[2026-04-09T17:53:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.4 files_done=2 resolved=20 errors=115 current=tests/integration/api_build_test.py
+[2026-04-09T17:54:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=3 resolved=139 errors=266 current=tests/unit/fake_api.py
+[2026-04-09T17:55:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=6 resolved=236 errors=350 current=tests/unit/models_containers_test.py
+[2026-04-09T17:56:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.3 files_done=7 resolved=244 errors=515 current=tests/integration/api_exec_test.py
+[2026-04-09T17:57:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.2 files_done=8 resolved=258 errors=628 current=tests/unit/api_test.py
+[2026-04-09T17:58:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.2 files_done=9 resolved=323 errors=771 current=docker/models/images.py
+[2026-04-09T17:59:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=12 resolved=442 errors=943 current=tests/unit/api_image_test.py
+[2026-04-09T18:01:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=14 resolved=452 errors=1178 current=tests/integration/models_volumes_test.py
+[2026-04-09T18:02:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=17 resolved=464 errors=1276 current=docker/utils/socket.py
+[2026-04-09T18:05:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.4 files_done=20 resolved=523 errors=1756 current=docker/types/services.py
+[2026-04-09T18:06:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=22 resolved=573 errors=1851 current=docker/auth.py
+[2026-04-09T18:06:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.8 files_done=23 resolved=599 errors=1944 current=docker/models/secrets.py
+[2026-04-09T18:07:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.7 files_done=26 resolved=606 errors=2072 current=tests/unit/api_container_test.py
+[2026-04-09T18:09:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.2 files_done=27 resolved=681 errors=2281 current=tests/integration/models_images_test.py
+[2026-04-09T18:09:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.7 files_done=28 resolved=691 errors=2353 current=docker/api/client.py
+[2026-04-09T18:10:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.4 files_done=29 resolved=713 errors=2443 current=docker/api/config.py
+[2026-04-09T18:11:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.9 files_done=31 resolved=742 errors=2648 current=docker/models/containers.py
+[2026-04-09T18:12:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.5 files_done=32 resolved=755 errors=2726 current=docker/client.py
+[2026-04-09T18:13:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.7 files_done=34 resolved=772 errors=2893 current=tests/integration/api_container_test.py
+[2026-04-09T18:17:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.4 files_done=35 resolved=815 errors=3400 current=docker/api/secret.py
+[2026-04-09T18:17:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.9 files_done=40 resolved=823 errors=3469 current=docker/types/containers.py
+[2026-04-09T18:18:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.8 files_done=41 resolved=882 errors=3589 current=tests/integration/api_image_test.py
+[2026-04-09T18:19:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.6 files_done=42 resolved=906 errors=3700 current=docker/api/plugin.py
+[2026-04-09T18:20:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.5 files_done=44 resolved=935 errors=3822 current=tests/integration/models_services_test.py
+[2026-04-09T18:21:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.2 files_done=45 resolved=951 errors=3925 current=scripts/versions.py
+[2026-04-09T18:21:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.7 files_done=50 resolved=1020 errors=3999 current=tests/integration/api_volume_test.py
+[2026-04-09T18:22:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.7 files_done=52 resolved=1052 errors=4125 current=docker/api/volume.py
+[2026-04-09T18:23:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.3 files_done=55 resolved=1095 errors=4209 current=tests/integration/api_swarm_test.py
+[2026-04-09T18:24:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.9 files_done=56 resolved=1108 errors=4294 current=docker/models/nodes.py
+[2026-04-09T18:24:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.8 files_done=58 resolved=1172 errors=4421 current=docker/utils/decorators.py
+[2026-04-09T18:26:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.0 files_done=60 resolved=1178 errors=4573 current=tests/integration/regression_test.py
+[2026-04-09T18:26:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.5 files_done=64 resolved=1199 errors=4643 current=tests/unit/fake_api_client.py
+[2026-04-09T18:27:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.3 files_done=67 resolved=1248 errors=4751 current=tests/unit/api_build_test.py
+[2026-04-09T18:27:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.8 files_done=70 resolved=1268 errors=4833 current=docker/tls.py
+[2026-04-09T18:28:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.5 files_done=76 resolved=1329 errors=4918 current=tests/integration/api_secret_test.py
+[2026-04-09T18:29:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.1 files_done=81 resolved=1351 errors=5010 current=docker/api/exec_api.py
+[2026-04-09T18:29:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.7 files_done=88 resolved=1398 errors=5084 current=docker/models/swarm.py
+[2026-04-09T18:30:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.3 files_done=95 resolved=1417 errors=5167 current=docker/models/configs.py
+[2026-04-09T18:30:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.8 files_done=105 resolved=1465 errors=5245 current=tests/unit/api_exec_test.py
+[2026-04-09T18:31:14Z] [iter=1] Target type resolved target_type=call_site resolved=1476 errors=5283 secs=2318 mem_mb=884 MB
+[2026-04-09T18:31:14Z] [iter=1] Resolving target type target_type=import_statement count=406
+[2026-04-09T18:31:18Z] [iter=1] Target type resolved target_type=import_statement resolved=315 errors=0 secs=4 mem_mb=884 MB
+[2026-04-09T18:31:18Z] [iter=1] Resolving target type target_type=extends_clause count=185
+[2026-04-09T18:31:20Z] [iter=1] Target type resolved target_type=extends_clause resolved=165 errors=0 secs=2 mem_mb=884 MB
+[2026-04-09T18:31:26Z] [iter=1] Step 5: Writing final enrichment file triples=60799
+[2026-04-09T18:31:27Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/12c4067b866c9c96ecc130d55740ef04c276fd34.nq.gz size_kb=1284
+[2026-04-09T18:31:27Z] [iter=1] PHASE END: enrich elapsed_s=2361 elapsed_min=39.4 total_triples=60799
