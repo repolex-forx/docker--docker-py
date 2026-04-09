@@ -1,0 +1,7 @@
+[2026-04-09T17:39:19Z] === AST ITERATION 1 START | repo=docker/docker-py sha=12c4067b ===
+[2026-04-09T17:39:19Z] [iter=1] PHASE START: ast repo=docker/docker-py sha=12c4067b
+[2026-04-09T17:39:19Z] [iter=1] Building AST aggregate chunks
+[2026-04-09T17:40:43Z] [iter=1] AST chunks built count=1 triples=1107735
+[2026-04-09T17:40:43Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/12c4067b866c9c96ecc130d55740ef04c276fd34/.complete
+[2026-04-09T17:40:43Z] [iter=1] PHASE END: ast elapsed_s=84 elapsed_min=1.4
+[2026-04-09T17:40:43Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
